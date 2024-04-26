@@ -1,0 +1,29 @@
+# Rasa specific exclusions
+models/
+logs/
+.cache/
+
+# Virtual environment
+.venv/
+
+# User-specific settings
+.env
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Temporary files
+*~
+.DS_Store
+
+# Cached dependencies
+Pipfile.lock
+poetry.lock
+
+# Compiled Python files
+*.pyc
+
+# Optionally exclude large training data files
+# data/nlu.md
+# data/stories.md
