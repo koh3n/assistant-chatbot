@@ -17,4 +17,14 @@ stories:
     - eventname: meeting
   - action: utter_schedule
 
-  
+- story: weather test
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather
+    entities:
+    - city: cityname
+  - slot_was_set:
+    - city: cityname
+  - action: utter_weather
+

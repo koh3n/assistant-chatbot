@@ -6,6 +6,8 @@ entities:
   - eventname
 #emailing entities
   - email
+#weather entities
+  - city
 
 
 intents:
@@ -17,8 +19,8 @@ intents:
 #custom intents below
   - schedule
   - send_email
+  - weather
   
-
 slots:
 #scheduling slots
   timeslot:
@@ -35,7 +37,7 @@ slots:
       - type: from_entity
         entity: eventname
 
-#emailing slot
+#emailing slots
   email:
     type: text
     influence_conversation: false
@@ -49,6 +51,15 @@ slots:
     mappings:
       - type: from_text
         not_intent: send_email
+
+#weather slots
+  city:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: city
+      
 
 forms:
   email_form:
@@ -85,6 +96,8 @@ responses:
     - text: "Email canceled"
 
 #weather responses
+  utter_weather:
+    - text: "the weather in {city} is sunny"
 
 
 

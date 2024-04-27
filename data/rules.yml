@@ -30,6 +30,7 @@ rules:
     - eventname: meeting
   - action: utter_schedule
 
+
 #email rules
 - rule: Activate Form
   steps:
@@ -70,5 +71,13 @@ rules:
   - action: utter_email_canceled
   - action: action_clear_email
 
+- rule: weather test
+  steps:
+  - intent: weather
+    entities:
+    - city: cityname
+  - slot_was_set:
+    - city: cityname
+  - action: utter_weather
 
 
