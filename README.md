@@ -1,7 +1,7 @@
 # Setup
 **Requirements**
-- Python 3.9+ (I used 3.9.19)
-- Docker
+- [Python 3.9+](https://www.python.org/downloads/) (I used 3.9.19)
+- [Docker](https://www.docker.com/)
 - [WeatherAPI key](https://www.weatherapi.com/)
   
 **1) Install dependencies**
