@@ -24,7 +24,7 @@ rasa shell
 # Functionality
 - Schedule events
 - Send emails
-- View real time weather information + 7 day forecase for all major cities
+- View real time weather information + 7 day forecast for all major cities
 
 # Integration
 - Weather information from [WeatherAPI](https://www.weatherapi.com/)
