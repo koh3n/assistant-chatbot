@@ -43,3 +43,13 @@ class ClearSlotAction(Action):
             SlotSet("email", None),
             SlotSet("body", None)
             ]
+    
+class ClearBody(Action):
+    def name(self) -> Text:
+        return "action_clear_body"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Clear the slot named 'slot_name'
+        return [
+            SlotSet("body", None)
+            ]

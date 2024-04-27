@@ -8,7 +8,7 @@ stories:
   - action: utter_greet
 
 
-- story: scheduling
+- story: time test
   steps:
   - intent: schedule
     entities: 
@@ -16,3 +16,5 @@ stories:
   - slot_was_set: 
     - eventname: meeting
   - action: utter_schedule
+
+  

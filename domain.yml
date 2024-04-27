@@ -6,7 +6,6 @@ entities:
   - eventname
 #emailing entities
   - email
-  # - subject
 
 
 intents:
@@ -43,13 +42,6 @@ slots:
     mappings:
       - type: from_entity
         entity: email
-
-  # subject:
-  #   type: text
-  #   influence_conversation: false
-  #   mappings:
-  #     - type: from_entity
-  #       entity: subject
         
   body:
     type: text
@@ -64,27 +56,19 @@ forms:
       - email
       - body
 
-
-
-
 responses:
 #default responses, can remove later
   utter_greet:
   - text: "Hey! How are you?"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
   utter_goodbye:
   - text: "Bye"
 
-#custom responses below
+#schedule responses
   utter_schedule:
   - text: "{eventname} booked for {timeslot}"
 
+# email responses
   utter_ask_email:
     - text: "Who would you like to send the email to?"
 
@@ -96,18 +80,17 @@ responses:
 
   utter_email_sent:
     - text: "Email sent successfully to {email}!"
-  # utter_email_not_sent:
-  #   - text: "Oops! Something went wrong. The email was not sent."
+
   utter_email_canceled:
     - text: "Email canceled"
 
+#weather responses
+
+
+
 actions:
   - action_clear_email
-  # - send_email
-
-
-
-
+  - action_clear_body
 
 session_config:
   session_expiration_time: 60
