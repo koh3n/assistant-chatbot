@@ -2,6 +2,8 @@
 models/
 logs/
 .cache/
+.rasa/cache
+
 
 # Virtual environment
 .venv/
@@ -24,6 +26,3 @@ poetry.lock
 # Compiled Python files
 *.pyc
 
-# Optionally exclude large training data files
-# data/nlu.md
-# data/stories.md
