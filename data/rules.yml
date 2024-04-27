@@ -71,13 +71,13 @@ rules:
   - action: utter_email_canceled
   - action: action_clear_email
 
-- rule: weather test
-  steps:
-  - intent: weather
-    entities:
-    - city: cityname
-  - slot_was_set:
-    - city: cityname
-  - action: utter_weather
+# - rule: weather test
+#   steps:
+#   - intent: weather
+#     entities:
+#     - city: cityname
+#   - slot_was_set:
+#     - city: cityname
+#   - action: action_weather
 
 

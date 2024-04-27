@@ -38,6 +38,7 @@ frozenlist==1.4.1
 fsspec==2024.3.1
 future==1.0.0
 gast==0.4.0
+gensim==3.8.2
 google-api-core==2.18.0
 google-api-python-client==2.127.0
 google-auth==2.29.0
@@ -95,6 +96,7 @@ pyparsing==3.1.2
 pyrsistent==0.20.0
 python-crfsuite==0.9.10
 python-dateutil==2.8.2
+python-dotenv==1.0.1
 python-engineio==4.9.0
 python-socketio==5.11.2
 pytz==2022.7.1
@@ -124,6 +126,7 @@ simple-websocket==1.0.0
 six==1.16.0
 sklearn-crfsuite==0.3.6
 slack_sdk==3.27.1
+smart-open==7.0.4
 SQLAlchemy==1.4.52
 structlog==23.3.0
 structlog-sentry==2.1.0

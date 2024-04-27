@@ -104,6 +104,7 @@ responses:
 actions:
   - action_clear_email
   - action_clear_body
+  - action_weather
 
 session_config:
   session_expiration_time: 60

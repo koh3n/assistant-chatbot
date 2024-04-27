@@ -167,7 +167,7 @@ nlu:
     - Could you give me the weather report for [Buenos Aires](city) today?
     - What's the forecast for [lima](city) on Friday?
     - How's the weather in [Bogotá](city) this morning?
-    - Can you tell me the weather in [Caracas](city) for the next few days?
+    - Can you tell me the weather in [San Francisco](city) for the next few days?
     - What's the temperature like in [santiago](city) right now?
     - What will be the weather in [La Paz](city) this afternoon?
     - Could you give me the weather forecast for [Quito](city) this evening?
@@ -199,9 +199,9 @@ nlu:
     - Could you give me the weather forecast for [Birmingham](city) this evening?
     - Tell me the weather in [Liverpool](city) for tomorrow morning.
     - What's the weather forecast for [Leeds](city) on Thursday?
-    - Can you tell me the temperature in [Sheffield](city) at night?
+    - Can you tell me the temperature in [Vancouver](city) at night?
     - What's the weather like in [Bristol](city) during the day?
-    - Tell me the forecast for [Cardiff](city) this weekend.
+    - Tell me the forecast for [vancouver](city) this weekend.
     - What's the weather going to be in [Belfast](city) next week?
     - Could you give me the weather report for [Glasgow](city) today?
     - What's the forecast for [Edinburgh](city) on Friday?

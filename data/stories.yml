@@ -26,5 +26,5 @@ stories:
     - city: cityname
   - slot_was_set:
     - city: cityname
-  - action: utter_weather
+  - action: action_weather
 
