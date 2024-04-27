@@ -1,0 +1,80 @@
+version: "3.1"
+
+nlu:
+#training data for weather
+
+- intent: weather
+  examples: |
+    - What's the weather like in [New York](city)?
+    - What will be the weather forecast for [Los Angeles](city) today?
+    - Can you tell me the weather in [Chicago](city) tomorrow?
+    - What's the temperature in [Houston](city) right now?
+    - Tell me the forecast for [miami](city) this weekend.
+    - What's the weather going to be in [San Francisco](city) next week?
+    - Could you give me the weather report for [Washington, D.C.](city) today?
+    - What's the forecast for [seattle](city) on Friday?
+    - How's the weather in [boston](city) this morning?
+    - Can you tell me the weather in [toronto](city) for the next few days?
+    - What's the temperature like in [paris](city) right now?
+    - What will be the weather in [London](city) this afternoon?
+    - Could you give me the weather forecast for [Berlin](city) this evening?
+    - Tell me the weather in [mmadrid](city) for tomorrow morning.
+    - What's the weather forecast for [Rome](city) on Thursday?
+    - Can you tell me the temperature in [Moscow](city) at night?
+    - What's the weather like in [Tokyo](city) during the day?
+    - Tell me the forecast for [Beijing](city) this weekend.
+    - What's the weather going to be in [Shanghai](city) next week?
+    - Could you give me the weather report for [Seoul](city) today?
+    - What's the forecast for [Bangkok](city) on Friday?
+    - How's the weather in [Sydney](city) this morning?
+    - Can you tell me the weather in [Melbourne](city) for the next few days?
+    - What's the temperature like in [Auckland](city) right now?
+    - What will be the weather in [Dubai](city) this afternoon?
+    - Could you give me the weather forecast for [Cairo](city) this evening?
+    - Tell me the weather in [Mumbai](city) for tomorrow morning.
+    - What's the weather forecast for [Delhi](city) on Thursday?
+    - Can you tell me the temperature in [Istanbul](city) at night?
+    - What's the weather like in [Mexico City](city) during the day?
+    - Tell me the forecast for [São Paulo](city) this weekend.
+    - What's the weather going to be in [Rio de Janeiro](city) next week?
+    - Could you give me the weather report for [Buenos Aires](city) today?
+    - What's the forecast for [lima](city) on Friday?
+    - How's the weather in [Bogotá](city) this morning?
+    - Can you tell me the weather in [San Francisco](city) for the next few days?
+    - What's the temperature like in [santiago](city) right now?
+    - What will be the weather in [La Paz](city) this afternoon?
+    - Could you give me the weather forecast for [Quito](city) this evening?
+    - Tell me the weather in [San José](city) for tomorrow morning.
+    - What's the weather forecast for [Havana](city) on Thursday?
+    - Can you tell me the temperature in [Montevideo](city) at night?
+    - What's the weather like in [brasília](city) during the day?
+    - Tell me the forecast for [Asunción](city) this weekend.
+    - What's the weather going to be in [Lisbon](city) next week?
+    - Could you give me the weather report for [Madrid](city) today?
+    - What's the forecast for [Barcelona](city) on Friday?
+    - How's the weather in [Rome](city) this morning?
+    - Can you tell me the weather in [Venice](city) for the next few days?
+    - What's the temperature like in [Florence](city) right now?
+    - What will be the weather in [milan](city) this afternoon?
+    - Could you give me the weather forecast for [Naples](city) this evening?
+    - Tell me the weather in [athens](city) for tomorrow morning.
+    - What's the weather forecast for [Thessaloniki](city) on Thursday?
+    - Can you tell me the temperature in [Stockholm](city) at night?
+    - What's the weather like in [Oslo](city) during the day?
+    - Tell me the forecast for [copenhagen](city) this weekend.
+    - What's the weather going to be in [Helsinki](city) next week?
+    - Could you give me the weather report for [Reykjavík](city) today?
+    - What's the forecast for [Dublin](city) on Friday?
+    - How's the weather in [Beirut](city) this morning?
+    - Can you tell me the weather in [Glasgow](city) for the next few days?
+    - What's the temperature like in [London](city) right now?
+    - What will be the weather in [Manchester](city) this afternoon?
+    - Could you give me the weather forecast for [Birmingham](city) this evening?
+    - Tell me the weather in [Liverpool](city) for tomorrow morning.
+    - What's the weather forecast for [Leeds](city) on Thursday?
+    - Can you tell me the temperature in [Vancouver](city) at night?
+    - What's the weather like in [Bristol](city) during the day?
+    - Tell me the forecast for [vancouver](city) this weekend.
+    - What's the weather going to be in [Belfast](city) next week?
+    - Could you give me the weather report for [Glasgow](city) today?
+    - What's the forecast for [Edinburgh](city) on Friday?

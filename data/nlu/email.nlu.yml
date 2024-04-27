@@ -1,0 +1,29 @@
+version: "3.1"
+
+nlu:
+# training data for send email
+- intent: send_email
+  examples: |
+    - I want to send the email to [person@gmail.com](email)
+    - send to [person@gmail.com](email) 
+    - Send email to [person@gmail.com](email)
+    - I want to send the email to [john.doe@example.com](email)
+    - send to [jane.smith@emailprovider.com](email)
+    - Send email to [mark.jones@example.org](email)
+    - I need to email [emily_williams@emailservice.net](email)
+    - Please send the email to [alex.brown@example.net](email)
+    - Can you send an email to [sarah.davis@emailprovider.org](email)
+    - I want to send an email to [chris.white@example.com](email)
+    - send to [samantha.green@example.org](email)
+    - Send email to [jason.black@emailservice.com](email)
+    - I need to email [lisa.thomas@example.net](email)
+    - Please send the email to [john.doe@yahoo.com](email)
+    - Can you send an email to [jane.smith@gmail.com](email)?
+    - I need to email [mark.jones@outlook.com](email)
+    - Send an email to [emily_williams@hotmail.com](email)
+    - Could you please send the email to [alex.brown@icloud.com](email)?
+    - I want to send an email to [sarah.davis@yahoo.com](email)
+    - Please send the email to [chris.white@gmail.com](email)
+    - Can you help me email [samantha.green@outlook.com](email)?
+    - Send an email to [jason.black@hotmail.com](email)
+    - Let's send an email to [lisa.thomas@icloud.com](email)

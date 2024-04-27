@@ -2,36 +2,21 @@ version: "3.1"
 
 rules:
 
-- rule: time test
-  steps:
-  - intent: schedule
-    entities: 
-    - eventname: meeting
-  - slot_was_set: 
-    - eventname: meeting
-  - action: utter_schedule
-
-#default rules
+#default goodbye rule
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
-
+#default greeting rule
 - rule: greet
   steps:
   - intent: greet
   - action: utter_greet
 
-#scheduling rules
-- rule: scheduling
-  steps:
-  - intent: schedule
-    entities: 
-    - eventname: meeting
-  - action: utter_schedule
+#email rules to ensure all data is present before email is sent
+#ex. email address & body
+#activate, submit and cancel all work together to ensure the form works correctly
 
-
-#email rules
 - rule: Activate Form
   steps:
     - intent: send_email
@@ -70,14 +55,3 @@ rules:
   - intent: deny
   - action: utter_email_canceled
   - action: action_clear_email
-
-# - rule: weather test
-#   steps:
-#   - intent: weather
-#     entities:
-#     - city: cityname
-#   - slot_was_set:
-#     - city: cityname
-#   - action: action_weather
-
-

@@ -2,13 +2,14 @@ version: "3.1"
 
 stories:
 
+#greeting logic 
 - story: greet
   steps:
   - intent: greet
   - action: utter_greet
 
-
-- story: time test
+#scheduling logic
+- story: schedule story
   steps:
   - intent: schedule
     entities: 
@@ -17,7 +18,8 @@ stories:
     - eventname: meeting
   - action: utter_schedule
 
-- story: weather test
+#weather logic
+- story: weather story
   steps:
   - intent: greet
   - action: utter_greet

@@ -1,0 +1,53 @@
+version: "3.1"
+
+nlu:
+#training data for schedule
+- intent: schedule
+  examples: |
+    - book an [doctors appointment](eventname) for tomorrow
+    - schedule an [doctors appointment](eventname) for tomorrow
+    - schedule an [client meeting](eventname) for tomorrow
+    - schedule an [team meeting](eventname) for tomorrow
+    - organize an [appointment](eventname) for today
+    - plan an [appointment with Jon](eventname) for today
+    - book a [meeting with Oscar](eventname) for today
+    - book a [meeting with Lebron](eventname) for today
+    - book [Lunch with Lebron James](eventname) for today
+    - book [Dinner with Michael](eventname) for today
+    - book [Basketball Lessons with Michael Jordan](eventname) today at 4pm
+    - book a [football match with Leo](eventname) today
+    - book a [consultation with Leo Messi](eventname) for today
+    - book me a [meeting with Jon](eventname) on 04-26-23 at 10:30 am
+    - Please schedule a [team brainstorming session](eventname) for next Monday at 2:00 PM
+    - I need to set up a [client presentation](eventname) on May 5th at 11:00 AM
+    - Can you arrange a [project review meeting](eventname) for Thursday afternoon around 3:30 PM
+    - Let's organize a [departmental training session](eventname) for next Friday starting at 9:00 AM
+    - Please book a [lunch meeting with the marketing team](eventname) for April 30th at 12:30 PM
+    - I'd like to schedule a [one-on-one discussion with Sarah](eventname) on Wednesday at 10:00 AM
+    - Could you set up a [video conference with the engineering team](event_name) for Thursday at 2:00 PM
+    - Let's plan a [customer feedback session](event_name) for next Monday morning at 10:00 AM
+    - Please arrange a [product roadmap review](event_name) for April 28th at 3:00 PM
+    - Can we schedule a [sales strategy meeting](event_name) for tomorrow at 9:30 AM
+    - book an [annual check-up](eventname) for tomorrow
+    - schedule an [eye exam](eventname) for tomorrow
+    - schedule an [interview](eventname) for tomorrow
+    - schedule an [all-hands meeting](eventname) for tomorrow
+    - book an [oil change appointment](eventname) for today
+    - book an [appointment with Dr. Smith](eventname) for today
+    - book a [strategy session with the CEO](eventname) for today
+    - book a [client lunch meeting](eventname) for today
+    - book [Dinner with the Board of Directors](eventname) for today
+    - book [Swimming Lessons with Coach Taylor](eventname) today at 4pm
+    - book a [tennis match with Andy](eventname) today
+    - book a [consultation with a financial advisor](eventname) for today
+    - book me a [meeting with Sarah and John](eventname) on 04-26-23 at 10:30 am
+    - Please schedule a [budget planning session](eventname) for next Monday at 2:00 PM
+    - I need to set up a [product demo](eventname) on May 5th at 11:00 AM
+    - Can you arrange a [client onboarding meeting](eventname) for Thursday afternoon around 3:30 PM
+    - Let's organize a [workshop on communication skills](eventname) for next Friday starting at 9:00 AM
+    - Please book a [brainstorming session with the design team](eventname) for April 30th at 12:30 PM
+    - I'd like to schedule a [training session on new software](eventname) on Wednesday at 10:00 AM
+    - Could you set up a [webinar on machine learning](eventname) for Thursday at 2:00 PM
+    - Let's plan a [town hall meeting](eventname) for next Monday morning at 10:00 AM
+    - Please arrange a [bug-fixing session](eventname) for April 28th at 3:00 PM
+    - Can we schedule a [marketing strategy workshop](eventname) for tomorrow at 9:30 AM
