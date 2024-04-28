@@ -32,6 +32,9 @@ rasa shell
 - **Schedule events**
   - The bot parses your message for the date, time and name of the event
   - It then creates an event and sends it to your email, allowing you to easily add to your Google Calendar or any other calendar application
+    
+  https://github.com/koh3n/assistant-chatbot/assets/156872276/1ee75d2b-ac4b-43ad-8eeb-f5dd430c23bb
+
 - **Send emails**
   - The bot parses your message for the email address of the recipient
   - It then prompts you to enter a message body for the email and sends it after you have confirmed.
