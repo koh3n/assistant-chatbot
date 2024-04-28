@@ -38,6 +38,9 @@ rasa shell
 - **Send emails**
   - The bot parses your message for the email address of the recipient
   - It then prompts you to enter a message body for the email and sends it after you have confirmed.
+ 
+https://github.com/koh3n/assistant-chatbot/assets/156872276/b7d67114-cde5-461c-a671-7ef2875e598c
+
 - **View real time weather information + 7 day forecast for all major cities**
   - The bot parses your message for the city and returns the 7 day forecast, with weather conditions and low/high temperatures
 - **View the latest news articles on topics of your choice**
