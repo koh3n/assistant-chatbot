@@ -61,9 +61,20 @@ rasa shell
 - The model is able to understand when the user wants to use one of the features
 - The training data for these intents can be found in data/nlu/*
   
-# Improvements/ Unfinised Features
+# Improvements
+- Given more time I would have directly used Google's APIs for Gmail, Google Messages and Google Calendar to handle the email, reminders and scheduling, respectively. 
 - All time related activites (scheduling/ setting reminders) are all hardcoded to Vancouver time (PDT). Adding in user settings where users can select their time zones would be beneficial.
 - MORE TRAINING DATA!!! I made all the training data myself (with the help of chatGPT) so the model definitely isn't as perfect as it could be.
-- 
+- The bot is unable to run while waiting for a reminder notification to be sent
 
+# Unfinised Features
+- Unfortunately I didn't have enough time to finish all the requested functionality features. Here are the ones I missed.
+1) **general knowledge**
+  - There are a couple paths I could take with this but I think the best one would be integrating the bot with a LLM such as OpenAI. This avoids having to train the bot and deal with tons and tons of training data.
+  - I think a smart way to implement this would be as a fallback action (since human assistance isn't that useful in this scenario as mentioned earlier)
+    - Once the bot is unsure of how to reply, it sends the last seen message to the LLM for processing and returns the result.   
+2) **managing to-do lists**
+  
+2) **offering recommendations (e.g., restaurants)**
+  
 # Evaluation
