@@ -53,7 +53,7 @@ rasa shell
   - Custom async logic to handle delay in sending reminder notifications
 
 # Escalation to Human Assistance
-- This could be implemented as a fallback action when the bot's confidence in predicting a response falls below a certain threshold
+- This could be implemented as a fallback action when the bot's confidence in predicting a response falls below a certain threshold.
 - Currently the fallback action is to not reply and listen again for the user's next input. This could be changed to send a message or email to a human assistant with the details of the conversation.
 - However, from a functional standpoint this might not be the most useful feature as the user would most likely be able to do the task their self.
   
@@ -65,16 +65,20 @@ rasa shell
 - Given more time I would have directly used Google's APIs for Gmail, Google Messages and Google Calendar to handle the email, reminders and scheduling, respectively. 
 - All time related activites (scheduling/ setting reminders) are all hardcoded to Vancouver time (PDT). Adding in user settings where users can select their time zones would be beneficial.
 - MORE TRAINING DATA!!! I made all the training data myself (with the help of chatGPT) so the model definitely isn't as perfect as it could be.
-- The bot is unable to run while waiting for a reminder notification to be sent
+- The bot is unable to run while waiting for a reminder notification to be sent.
 
 # Unfinised Features
 - Unfortunately I didn't have enough time to finish all the requested functionality features. Here are the ones I missed.
-1) **general knowledge**
+1) **General knowledge**
   - There are a couple paths I could take with this but I think the best one would be integrating the bot with a LLM such as OpenAI. This avoids having to train the bot and deal with tons and tons of training data.
   - I think a smart way to implement this would be as a fallback action (since human assistance isn't that useful in this scenario as mentioned earlier)
-    - Once the bot is unsure of how to reply, it sends the last seen message to the LLM for processing and returns the result.   
-2) **managing to-do lists**
-  
-2) **offering recommendations (e.g., restaurants)**
-  
+    - Once the bot is unsure of how to reply, it sends the last seen message to the LLM for processing and returns the result.
+      
+2) *Managing to-do lists**
+  - I would probably just integrate this with Google Tasks, since everything else is using Google services.
+    
+3) **Offering recommendations (e.g., restaurants)**
+  - Restaurant recommendations would require user location so there would need to be permisions required there, dependant on how the chatbot is implemented.
+  - After the location is gathered, I would use Google Maps API to search for relevant restaurants near the user.
+
 # Evaluation
