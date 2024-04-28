@@ -58,6 +58,9 @@ https://github.com/koh3n/assistant-chatbot/assets/156872276/87434068-8b61-402f-a
 
 https://github.com/koh3n/assistant-chatbot/assets/156872276/c957483e-0002-4f8c-a4e9-c4e605d986b5
 
+![reminder_demo](https://github.com/koh3n/assistant-chatbot/assets/156872276/8f8623b2-fa22-418d-bbe0-e14c3c9afa12)
+
+
 # Integration
 - Events scheduled through the icalendar Python Library
 - Emails sent via mtlplib Python Library
