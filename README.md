@@ -42,3 +42,6 @@ rasa shell
 - The training data for these intents can be found in data/nlu/*
   
 # Improvements/ Unfinised Features
+- All time related activites (scheduling/ setting reminders) are all hardcoded to PDT. Adding in user settings where users can select their time zones would be beneficial.
+- MORE TRAINING DATA!!! I made all the training data myself (with the help of chatGPT) so the model definitely isn't as perfect as it could be.
+
