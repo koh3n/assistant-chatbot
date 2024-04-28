@@ -82,7 +82,7 @@ class ReminderAction(Action):
             message = client.messages.create(
                 to=user_number,
                 from_=twilio_number,
-                body=body
+                body= "Here's your reminder!"
             )
         except Exception as e:
             dispatcher.utter_message(text=f"Error sending reminder: {str(e)}")

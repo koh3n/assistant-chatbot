@@ -144,7 +144,7 @@ responses:
     - text: "Sure! When would you like it to be set for?"
   
   utter_confirm_reminder:
-    - text: "CONFIRM? Reminder for {reminder} set at {timeslot}"
+    - text: "CONFIRM? Reminder set at {timeslot}"
 
   utter_reminder_canceled:
     - text: "Reminder canceled"
