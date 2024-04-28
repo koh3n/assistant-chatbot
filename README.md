@@ -3,6 +3,7 @@
 - [Python 3.9+](https://www.python.org/downloads/) (I used 3.9.19)
 - [Docker](https://www.docker.com/)
 - [WeatherAPI key](https://www.weatherapi.com/)
+- [NewsAPI key](https://newsapi.org/)
   
 **1) Install dependencies**
 
@@ -25,9 +26,11 @@ rasa shell
 - Schedule events
 - Send emails
 - View real time weather information + 7 day forecast for all major cities
+- View the latest news articles on topics of your choice
 
 # Integration
 - Weather information from [WeatherAPI](https://www.weatherapi.com/)
+- News from [NewsAPI](https://newsapi.org/)
 
 # Escalation to Human Assistance
 - This could be implemented as a fallback action when the bot's confidence in predicting a response falls below a certain threshold
