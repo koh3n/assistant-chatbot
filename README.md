@@ -3,6 +3,8 @@
 - [Python 3.9+](https://www.python.org/downloads/) (I used 3.9.19)
 - [Docker](https://www.docker.com/)
 - [WeatherAPI key](https://www.weatherapi.com/)
+- [NewsAPI key](https://newsapi.org/)
+- [TwilioAPI token and sid](https://www.twilio.com/en-us)
   
 **1) Install dependencies**
 
@@ -25,9 +27,14 @@ rasa shell
 - Schedule events
 - Send emails
 - View real time weather information + 7 day forecast for all major cities
+- View the latest news articles on topics of your choice
+- Set custom reminders (sends a SMS to your phone)
 
 # Integration
 - Weather information from [WeatherAPI](https://www.weatherapi.com/)
+- News from [NewsAPI](https://newsapi.org/)
+- Reminder sent through SMS via [Twilio](https://www.twilio.com/en-us)
+  - Custom async logic to handle delay in sending reminder notifications
 
 # Escalation to Human Assistance
 - This could be implemented as a fallback action when the bot's confidence in predicting a response falls below a certain threshold
@@ -39,3 +46,7 @@ rasa shell
 - The training data for these intents can be found in data/nlu/*
   
 # Improvements/ Unfinised Features
+- All time related activites (scheduling/ setting reminders) are all hardcoded to Vancouver time (PDT). Adding in user settings where users can select their time zones would be beneficial.
+- MORE TRAINING DATA!!! I made all the training data myself (with the help of chatGPT) so the model definitely isn't as perfect as it could be.
+
+# Evaluation
