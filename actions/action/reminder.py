@@ -10,6 +10,7 @@ import pytz
 import time  
 from twilio.rest import Client
 from dateutil import parser
+import asyncio
 
 class ClearTime(Action):
     def name(self) -> Text:
@@ -31,51 +32,13 @@ class ClearREminder(Action):
             SlotSet("reminder", None)
             ]
 
-# class ReminderAction(Action):
-#     def name(self) -> Text:
-#         return "action_reminder"
 
-#     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-#         load_dotenv()
-#         account_sid = os.getenv("TWILIO_SID")
-#         auth_token = os.getenv("TWILIO_TOKEN")
-#         user_number = os.getenv("USER_PHONE_NUMBER")
-#         twilio_number = os.getenv("TWILIO_PHONE_NUMBER")
-#         body =  'Reminder Set!'  #tracker.get_slot("reminder")
-#         timeslot = tracker.get_slot("timeslot")
-
-#         scheduled_time = parser.isoparse(timeslot)
-#         scheduled_time_pst = scheduled_time.astimezone(pytz.timezone('America/Los_Angeles'))
-#         current_time = datetime.datetime.now(pytz.utc)
-#         delay = (scheduled_time_pst - current_time).total_seconds()
-
-#         if delay < 0:
-#             dispatcher.utter_message(text="Time has already passed.")
-#             return
-
-#         dispatcher.utter_message(text="Reminder scheduled to be sent at:" + scheduled_time_pst)
-   
-#         time.sleep(delay)
-
-#         client = Client(account_sid, auth_token)
-
-#         message = client.messages.create(
-#             to = user_number,
-#             from_= twilio_number,
-#             body = body
-#         )
-
-#         dispatcher.utter_message(text="Reminder sent successfully!")
-
-#         return [SlotSet("timeslot", None),
-#                 SlotSet("reminder", None)]
 
 class ReminderAction(Action):
     def name(self) -> Text:
         return "action_reminder"
 
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         dispatcher.utter_message(text="Starting reminder action...")
 
         load_dotenv()
@@ -131,26 +94,22 @@ class ReminderAction(Action):
                 SlotSet("reminder", None)]
 
     
-# class ReminderTest(Action):
-#     def name(self) -> Text:
-#         return "action_reminder_test"
 
-#     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-#         load_dotenv()
-#         account_sid = os.getenv("TWILIO_SID")
-#         auth_token = os.getenv("TWILIO_TOKEN")
-#         user_number = os.getenv("USER_PHONE_NUMBER")
-#         twilio_number = os.getenv("TWILIO_PHONE_NUMBER")
-#         body = tracker.get_slot("reminder")
+# def sendmessage(message):
+#     load_dotenv()
+#     account_sid = os.getenv("TWILIO_SID")
+#     auth_token = os.getenv("TWILIO_TOKEN")
+#     user_number = os.getenv("USER_PHONE_NUMBER")
+#     twilio_number = os.getenv("TWILIO_PHONE_NUMBER")
 
 
-#         client = Client(account_sid, auth_token)
 
-#         message = client.messages.create(
-#             to = user_number,
-#             from_= twilio_number,
-#             body = body
-#         )
+#     client = Client(account_sid, auth_token)
 
-#         return []
+#     message = client.messages.create(
+#         to = user_number,
+#         from_= twilio_number,
+#         body = message
+#     )
+
+#     return []
