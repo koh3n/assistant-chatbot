@@ -5,6 +5,7 @@
 - [WeatherAPI key](https://www.weatherapi.com/)
 - [NewsAPI key](https://newsapi.org/)
 - [TwilioAPI Token and SID](https://www.twilio.com/en-us)
+- [Gmail Account with generated app password](https://myaccount.google.com/u/1/apppasswords)
   
 **1) Install dependencies**
 
