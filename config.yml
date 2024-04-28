@@ -20,7 +20,7 @@ pipeline:
 - name: RegexFeaturizer
 - name: DucklingEntityExtractor
   dimensions: ["time", "email"]
-  timezone: "PST"    # Set the appropriate timezone
+  tz: "PDT"    # Set the appropriate timezone
   locale: "en_US"    # Set the appropriate locale
   url: "http://localhost:8000"
 

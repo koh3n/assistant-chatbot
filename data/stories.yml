@@ -17,6 +17,7 @@ stories:
   - slot_was_set: 
     - eventname: meeting
   - action: utter_schedule
+  - action: action_clear_time
 
 #weather logic
 - story: weather story

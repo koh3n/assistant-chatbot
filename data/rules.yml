@@ -56,13 +56,12 @@ rules:
   - action: utter_email_canceled
   - action: action_clear_email
 
-
 - rule: Activate news Form
   steps:
-    - intent: news
-    - action: action_clear_topic
-    - action: news_form
-    - active_loop: news_form
+  - intent: news
+  - action: action_clear_topic
+  - action: news_form
+  - active_loop: news_form
 
 - rule: Submit news form
   condition:
@@ -77,3 +76,44 @@ rules:
   # The actions we want to run when the form is submitted.
   - action: action_news
   - action: action_clear_topic
+
+- rule: Activate reminder Form
+  steps:
+    - intent: reminder
+    - action: action_clear_reminder
+    - action: reminder_form
+    - active_loop: reminder_form
+
+- rule: Submit reminder_form
+  condition:
+  # Condition that form is active.
+  - active_loop: reminder_form
+  steps:
+  # Form is deactivated
+  - action: reminder_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted.
+  - action: utter_confirm_reminder
+  - intent: affirm
+  - action: action_reminder
+  - action: action_clear_time
+  - action: action_clear_reminder
+
+- rule: cancel reminder_form
+  condition:
+  # Condition that form is active.
+  - active_loop: reminder_form
+  steps:
+  # Form is deactivated
+  - action: reminder_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted.
+  - action: utter_confirm_reminder
+  - intent: deny
+  - action: utter_reminder_canceled
+  - action: action_clear_reminder
+  - action: action_clear_time

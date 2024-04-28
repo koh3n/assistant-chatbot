@@ -20,6 +20,7 @@ intents:
   - send_email
   - weather
   - news
+  - reminder
   
 slots:
 #scheduling slots
@@ -68,6 +69,13 @@ slots:
       - type: from_text
         not_intent: news
 
+#reminder slots
+  reminder:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        not_intent: reminder
 
 forms:
   email_form:
@@ -78,6 +86,11 @@ forms:
   news_form:
     required_slots:
       - topic
+  
+  reminder_form:
+    required_slots:
+      - timeslot
+      - reminder
       
 
 responses:
@@ -115,6 +128,18 @@ responses:
   utter_news_test:
     - text: "the weather in {topic} is sunny"
 
+#reminder responses
+  utter_ask_reminder:
+    - text: "Sure! What would you like the message to be?"
+
+  utter_ask_timeslot:
+    - text: "Sure! When would you like it to be set for?"
+  
+  utter_confirm_reminder:
+    - text: "CONFIRM? Reminder for {reminder} set at {timeslot}"
+
+  utter_reminder_canceled:
+    - text: "Reminder canceled"
 
 
 actions:
@@ -123,6 +148,10 @@ actions:
   - action_weather
   - action_news
   - action_clear_topic
+  - action_reminder
+  - action_clear_time
+  - action_clear_reminder
+  - action_reminder_test
 
 session_config:
   session_expiration_time: 60

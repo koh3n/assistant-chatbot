@@ -1,0 +1,54 @@
+version: "3.1"
+
+nlu:
+# training data for send email
+- intent: reminder
+  examples: |
+    - Set a reminder to take out the trash in 5 minutes
+    - Set a reminder to water the plants tomorrow
+    - Remind me to call mom at 3 PM
+    - Set a reminder for the meeting next Monday
+    - Can you remind me to buy groceries in an hour?
+    - Remind me to submit the report by Friday
+    - Set a reminder for the dentist appointment on May 15th
+    - Can you remind me to feed the dog at 7 AM?
+    - Remind me to pay the bills next week
+    - Set a reminder for the doctor's appointment at 10:30 AM
+    - Can you remind me to pick up the dry cleaning this afternoon?
+    - Remind me to send the email in 30 minutes
+    - Set a reminder to start cooking dinner at 6 PM
+    - Remind me to take the medicine every morning
+    - Can you remind me to check the mailbox in an hour?
+    - Remind me to call the client at 2:30 PM
+    - Set a reminder for the gym session tomorrow morning
+    - Can you remind me to return the library books next Tuesday?
+    - Remind me to water the plants every other day
+    - Set a reminder for the webinar on June 20th
+    - Can you remind me to take out the trash in 10 minutes?
+    - Remind me to buy a birthday gift for Sarah next month
+    - Set a reminder to renew the subscription next week
+    - Can you remind me to send the invoice by the end of the day?
+    - Remind me to check the project status at 9 AM
+    - Set a reminder for the parent-teacher meeting next Thursday
+    - Can you remind me to update the software this evening?
+    - Remind me to review the presentation slides tomorrow afternoon
+    - Set a reminder for the interview at 11:45 AM
+    - Can you remind me to water the garden in the evening?
+    - Remind me to call John on his birthday
+    - Set a reminder to change the air filter next month
+    - Can you remind me to take a break every hour?
+    - Remind me to schedule a dentist appointment this week
+    - Set a reminder for the team meeting at 4:30 PM
+    - Can you remind me to walk the dog at 6 AM?
+    - Remind me to buy tickets for the concert on July 5th
+    - Set a reminder to send the report to the client tomorrow
+    - Can you remind me to check the weather forecast in the morning?
+    - Remind me to start the laundry at 2 PM
+    - Set a reminder for the project deadline next Friday
+    - Can you remind me to call the plumber this afternoon?
+    - Remind me to take the car for servicing next month
+    - Set a reminder to review the budget this week
+    - Can you remind me to water the plants every evening?
+    - Remind me to attend the webinar on cybersecurity next Tuesday
+    - Set a reminder for the doctor's appointment next month
+    - Can you remind me to RSVP for the party by tomorrow?
