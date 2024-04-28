@@ -9,7 +9,6 @@ entities:
 #weather entities
   - city
 
-
 intents:
 #default intents, can remove later if needed
   - greet
@@ -20,6 +19,7 @@ intents:
   - schedule
   - send_email
   - weather
+  - news
   
 slots:
 #scheduling slots
@@ -59,13 +59,26 @@ slots:
     mappings:
       - type: from_entity
         entity: city
-      
+
+#news slots
+  topic:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        not_intent: news
+
 
 forms:
   email_form:
     required_slots:
       - email
       - body
+
+  news_form:
+    required_slots:
+      - topic
+      
 
 responses:
 #default responses, can remove later
@@ -95,9 +108,12 @@ responses:
   utter_email_canceled:
     - text: "Email canceled"
 
-#weather responses
-  utter_weather:
-    - text: "the weather in {city} is sunny"
+#news responses
+  utter_ask_topic:
+    - text: "Sure! What topic should I search for?"
+
+  utter_news_test:
+    - text: "the weather in {topic} is sunny"
 
 
 
@@ -105,6 +121,8 @@ actions:
   - action_clear_email
   - action_clear_body
   - action_weather
+  - action_news
+  - action_clear_topic
 
 session_config:
   session_expiration_time: 60

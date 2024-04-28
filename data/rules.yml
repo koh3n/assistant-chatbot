@@ -17,14 +17,14 @@ rules:
 #ex. email address & body
 #activate, submit and cancel all work together to ensure the form works correctly
 
-- rule: Activate Form
+- rule: Activate email Form
   steps:
     - intent: send_email
     - action: action_clear_body
     - action: email_form
     - active_loop: email_form
 
-- rule: Submit form
+- rule: Submit email form
   condition:
   # Condition that form is active.
   - active_loop: email_form
@@ -40,7 +40,7 @@ rules:
   - action: utter_email_sent
   - action: action_clear_email
 
-- rule: cancel form
+- rule: cancel email form
   condition:
   # Condition that form is active.
   - active_loop: email_form
@@ -55,3 +55,25 @@ rules:
   - intent: deny
   - action: utter_email_canceled
   - action: action_clear_email
+
+
+- rule: Activate news Form
+  steps:
+    - intent: news
+    - action: action_clear_topic
+    - action: news_form
+    - active_loop: news_form
+
+- rule: Submit news form
+  condition:
+  # Condition that form is active.
+  - active_loop: news_form
+  steps:
+  # Form is deactivated
+  - action: news_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted.
+  - action: action_news
+  - action: action_clear_topic

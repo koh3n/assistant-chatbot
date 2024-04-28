@@ -1,0 +1,54 @@
+version: "3.1"
+
+nlu:
+# training data for send email
+- intent: news
+  examples: |
+    - What's the recent news?
+    - Show me the news
+    - What are the latest headlines?
+    - Can you tell me the top news stories?
+    - Show me the recent news updates.
+    - I want to read some news articles.
+    - Any interesting news today?
+    - Show me the news headlines.
+    - Give me the latest news updates.
+    - Could you provide some news updates?
+    - I'm interested in current news.
+    - Show me what's happening in the news.
+    - Can you tell me about the latest news events?
+    - Any breaking news?
+    - What's happening in the world today?
+    - Can you update me on the news?
+    - I want to stay informed. Show me the news.
+    - Show me the latest news articles.
+    - What's new in the news today?
+    - Any important news I should know about?
+    - Keep me updated on the latest news.
+    - Show me the most recent news stories.
+    - I'm curious about what's in the news.
+    - Can you provide some news highlights?
+    - What's the latest news on [topic]?
+    - Show me the news for today.
+    - What's the news situation like right now?
+    - Give me an overview of the news.
+    - Any news updates for me?
+    - Show me news reports.
+    - Can you summarize the recent news?
+    - What's the latest news on [specific event]?
+    - Any news alerts?
+    - What's the current news cycle?
+    - Show me the latest news coverage.
+    - Can you provide some news insights?
+    - I need to catch up on the news. What's new?
+    - Tell me what's making headlines today.
+    - Any news stories trending?
+    - Show me the latest news updates on [topic].
+    - Keep me in the loop with the news.
+    - What's the news outlook for today?
+    - Any fresh news updates?
+    - Tell me about the news of the day.
+    - Show me the news highlights.
+    - I want to know what's happening in the news.
+    - What's the buzz in the news world?
+    - Show me the latest news developments.
