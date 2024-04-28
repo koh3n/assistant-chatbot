@@ -43,9 +43,15 @@ https://github.com/koh3n/assistant-chatbot/assets/156872276/b7d67114-cde5-461c-a
 
 - **View real time weather information + 7 day forecast for all major cities**
   - The bot parses your message for the city and returns the 7 day forecast, with weather conditions and low/high temperatures
+ 
+https://github.com/koh3n/assistant-chatbot/assets/156872276/8215f13a-4e9b-4fb1-89ed-099e35aab571
+
 - **View the latest news articles on topics of your choice**
   - Once you have asked the bot information about the news, it asks you for a specific topic and returns recent articles relevant to your topic
-  - The bot displays the article title as well as a link to the full article    
+  - The bot displays the article title as well as a link to the full article
+ 
+https://github.com/koh3n/assistant-chatbot/assets/156872276/87434068-8b61-402f-a7ac-d5329df833ab
+
 - **Set custom reminders (sends a SMS to your phone)**
   - The bot parses your message for the time and date of the reminder
   - After it has collected data on what the reminder is about, it waits until the specified time and sends a SMS message to your mobile phone reminding you of whatever you specified earlier
