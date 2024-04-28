@@ -7,3 +7,5 @@ from actions.action.news import NewsAction
 from actions.action.reminder import ClearTime
 from actions.action.reminder import ClearREminder
 from actions.action.reminder import ReminderAction
+from actions.action.schedule import SendEvent
+from actions.action.schedule import CreateEvent

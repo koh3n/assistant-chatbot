@@ -7,7 +7,7 @@ import os
 import requests
 import smtplib
 from email.mime.text import MIMEText
-from gensim.summarization import summarize
+
 
 #clears both the email and body slot after the email is sent
 class ClearSlotAction(Action):

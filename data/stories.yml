@@ -16,6 +16,8 @@ stories:
     - eventname: meeting
   - slot_was_set: 
     - eventname: meeting
+  - action: action_create_event
+  - action: action_send_event
   - action: utter_schedule
   - action: action_clear_time
 

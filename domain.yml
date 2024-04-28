@@ -162,6 +162,8 @@ actions:
   - action_reminder_test
   - action_send_email
   - action_save_secondary
+  - action_send_event
+  - action_create_event
 
 session_config:
   session_expiration_time: 60
