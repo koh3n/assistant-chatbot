@@ -57,7 +57,6 @@ https://github.com/koh3n/assistant-chatbot/assets/156872276/87434068-8b61-402f-a
   - After it has collected data on what the reminder is about, it waits until the specified time and sends a SMS message to your mobile phone reminding you of whatever you specified earlier
 
 https://github.com/koh3n/assistant-chatbot/assets/156872276/c957483e-0002-4f8c-a4e9-c4e605d986b5
-![reminder_demo](https://github.com/koh3n/assistant-chatbot/assets/156872276/3ee5c900-f8b4-4483-99e1-3eed83759d89)
 
 # Integration
 - Events scheduled through the icalendar Python Library
