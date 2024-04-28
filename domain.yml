@@ -6,6 +6,7 @@ entities:
   - eventname
 #emailing entities
   - email
+  - secondary
 #weather entities
   - city
 
@@ -52,6 +53,13 @@ slots:
     mappings:
       - type: from_text
         not_intent: send_email
+
+  secondary:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: secondary
 
 #weather slots
   city:
@@ -152,6 +160,8 @@ actions:
   - action_clear_time
   - action_clear_reminder
   - action_reminder_test
+  - action_send_email
+  - action_save_secondary
 
 session_config:
   session_expiration_time: 60

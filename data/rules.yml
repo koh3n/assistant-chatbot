@@ -35,8 +35,10 @@ rules:
   - slot_was_set:
     - requested_slot: null
   # The actions we want to run when the form is submitted.
+  - action: action_save_secondary
   - action: utter_confirm_email
   - intent: affirm
+  - action: action_send_email
   - action: utter_email_sent
   - action: action_clear_email
 
@@ -51,6 +53,7 @@ rules:
   - slot_was_set:
     - requested_slot: null
   # The actions we want to run when the form is submitted.
+  - action: action_save_secondary
   - action: utter_confirm_email
   - intent: deny
   - action: utter_email_canceled
