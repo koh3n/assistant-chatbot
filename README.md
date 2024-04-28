@@ -4,7 +4,7 @@
 - [Docker](https://www.docker.com/)
 - [WeatherAPI key](https://www.weatherapi.com/)
 - [NewsAPI key](https://newsapi.org/)
-- [TwilioAPI token and sid](https://www.twilio.com/en-us)
+- [TwilioAPI Token and SID](https://www.twilio.com/en-us)
   
 **1) Install dependencies**
 
