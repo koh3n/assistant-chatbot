@@ -67,14 +67,14 @@ rasa shell
 - MORE TRAINING DATA!!! I made all the training data myself (with the help of chatGPT) so the model definitely isn't as perfect as it could be.
 - The bot is unable to run while waiting for a reminder notification to be sent.
 
-# Unfinised Features
+# Unfinished Features
 - Unfortunately I didn't have enough time to finish all the requested functionality features. Here are the ones I missed.
 1) **General knowledge**
   - There are a couple paths I could take with this but I think the best one would be integrating the bot with a LLM such as OpenAI. This avoids having to train the bot and deal with tons and tons of training data.
   - I think a smart way to implement this would be as a fallback action (since human assistance isn't that useful in this scenario as mentioned earlier)
     - Once the bot is unsure of how to reply, it sends the last seen message to the LLM for processing and returns the result.
       
-2) *Managing to-do lists**
+2) **Managing to-do lists**
   - I would probably just integrate this with Google Tasks, since everything else is using Google services.
     
 3) **Offering recommendations (e.g., restaurants)**
@@ -82,3 +82,21 @@ rasa shell
   - After the location is gathered, I would use Google Maps API to search for relevant restaurants near the user.
 
 # Evaluation
+
+**1) Accuracy of Intent Classification**
+  - From my testing, it seems to work quite well. Given that the features of the bot are quite specific, the bot is able to classify the intents quite well by picking up on key words.
+  - One issue I have found is that the bot has a hard time recognizing city names, unless they are directly in the training data. I think it might help to use another model that is specifically trained on city names to help recognize them better.
+  - The classification isn't perfect and it might miss some cases (especially due to the lack of training data) 
+
+**2) Response Time**
+  - When using the bot there are no issues at all with regards to response time, other than the bug mentioned earlier about reminders, but that is due to my poor design skills :')
+
+**3) Task Completion Rate**
+  - Given that the bot understands the intent, everything with regards to functionality works perfectly as expected.
+  - I am using free trials/ free access versions for a bunch of the APIs so it might not be suitable for long term use, but that problem is solved with more $$$.
+    
+**4) Ease of Use**
+  - I might be biased since I made the bot, but I think it is pretty straight forward to use. You tell it what you want it to do and it does it ezpz.
+
+**5) General Bugs**
+  - There are definitely bugs in the program and errors in the chat bot logic. Given that this bot is quite involved it is to be expected. More time working on the bot + program and more resources would go a long way in making it better.
