@@ -11,25 +11,38 @@
 
 pip install -r requirements.txt
 
-**2) Run action server in new terminal**
+**2) Create .env file in root**
+
+- use the env.txt boilerplate, located in root 
+
+**3) Run action server in new terminal**
 
 rasa run action
 
-**3) Run Duckling server in new terminal**
+**4) Run Duckling server in new terminal**
 
 docker run -p 8000:8000 rasa/duckling
 
-**4) Train model and run Rasa server in new terminal**
+**5) Train model and run Rasa server in new terminal**
 
 rasa train
 rasa shell
 
 # Functionality
-- Schedule events
+- Schedule events 
+  - The bot parses your message for the date, time and name of the event
+  - It then creates an event and sends it to your email, allowing you to easily add to your Google Calendar or any other calendar application
 - Send emails
+  - The bot parses your message for the email address of the recipient
+  - It then prompts you to enter a message body for the email and sends it after you have confirmed.
 - View real time weather information + 7 day forecast for all major cities
+  - The bot parses your message for the city and returns the 7 day forecast, with weather conditions and low/high temperatures
 - View the latest news articles on topics of your choice
+  - Once you have asked the bot information about the news, it asks you for a specific topic and returns recent articles relevant to your topic
+  - The bot displays the article title as well as a link to the full article    
 - Set custom reminders (sends a SMS to your phone)
+  - The bot parses your message for the time and date of the reminder
+  - After it has collected data on what the reminder is about, it waits until the specified time and sends a SMS message to your mobile phone reminding you of whatever you specified earlier
 
 # Integration
 - Weather information from [WeatherAPI](https://www.weatherapi.com/)
